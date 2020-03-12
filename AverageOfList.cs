@@ -15,10 +15,21 @@ namespace LINQ
                 "73,88,83,99,64",
                 "98,100,66,74,55"
             };
-       
-        public static void OrderArray(List<string> classGrades)
+        public static void SplitFunction(List<string> classGrades)
         {
-            
+            var grades = classGrades[0].Split();
+            for (int i = 0; i < classGrades.Count; i++)
+            {
+                //gradesInNumbers.Add(i);
+                Console.WriteLine(classGrades[i]);
+            }
+            Console.ReadLine();
+
         }
+        //public static void ConvertStringToInt()
+        //{
+        //    List<int> gradesAsInts;
+        //    gradesAsInts = Convert.ToInt32(classGrades[i])
+        //}
     }
 }
